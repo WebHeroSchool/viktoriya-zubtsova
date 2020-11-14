@@ -1,6 +1,44 @@
-.menu__item,.main-content__button,.main-content__text{
+.menu__item, .main-content__button, .main-content__text{
   font-family: 'Roboto', sans-serif;
 }
-.main-content__title,.logo{
+.main-content__title, .logo{
   font-family: 'PT Serif', serif;
+}
+body{
+  margin: 0
+}
+.wrapper{
+  margin: auto;
+  width: 80%;
+}
+.logo, .menu, .main-content, .image-content{
+  display: inline-block;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  padding: 40px 0;
+}
+.menu{
+  display: flex;
+  align-items: center;
+}
+.menu__item{
+  padding: 0 13px;
+}
+.menu__item:last-child{
+  padding-right: 0;
+}
+.main-content__title{
+  margin: auto;
+  padding-top: 18%;
+}
+.main-content__text{
+  margin: auto;
+  padding: 40px 0 40px 0;
+}
+.main-content__button{
+  padding: 14px 25px 13px 16px;
 }
