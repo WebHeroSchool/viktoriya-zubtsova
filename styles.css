@@ -26,7 +26,7 @@ header{
 .menu__item{
   position: relative;
   margin-right: 26px;
-  font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
@@ -52,7 +52,7 @@ header{
   opacity: 1;
 }
 .main{
-  padding: 0 60% 300px 0;
+  padding: 146px 60% 100px 0;
   background: top right no-repeat url(img/mainimg.svg);
 }
 .main__title{
