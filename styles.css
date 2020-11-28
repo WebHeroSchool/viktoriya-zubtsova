@@ -1,3 +1,6 @@
+.wrapper,.logo,.menu,.main,.main__text,.main__text,.main__button{
+  border: 1px red solid;
+}
 body{
   margin: 0
 }
@@ -12,7 +15,7 @@ header{
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 122px;
 }
 .logo{
   width: 190px;
@@ -52,30 +55,61 @@ header{
   opacity: 1;
 }
 .main{
-  padding: 146px 60% 100px 0;
+  padding: 75px 60% 150px 0;
   background: top right no-repeat url(img/mainimg.svg);
 }
 .main__title{
-  margin: 0 0 40px 0;
+  margin: 0 0 36px 0;
   font: 66px/87px pt_serifbold, arial, helvetica, sans-serif;
 }
 .main__title-text_highlight{
   background: #ECF3FF;
 }
 .main__text{
-  margin: 0 0 41 0;
-  font: 22px/26px Roboto, arial, helvetica, sans-serif;
+  margin: 0 0 39px 0;
+  font: 500 22px/26px Roboto, arial, helvetica, sans-serif;
+  max-width: 455px;
 }
 .main__button{
   display: inline-block;
   font: 18px/21px Roboto arial, helvetica, sans-serif;
   color: #fff;
   background: #0056EC;
-  padding: 18px 21px;
+  padding: 18px 30px;
   text-decoration: none;
   border-radius: 4px;
   transition: .5s;
 }
 .main__button:hover{
   opacity: .5;
+}
+@media (max-width: 768px) {
+  .menu{
+    display: none;
+  }
+  header{
+    margin-bottom: 28px;
+  }
+  .main{
+    text-align: center;
+    padding: 74% 0 0;
+    background-size: 74%;
+    background-position: top center;
+  }
+  .main__title{
+    margin-bottom: 44px;
+    font: 30px/39px pt_serifbold, arial, helvetica, sans-serif;
+  }
+  .main__text{
+    margin-bottom: 25px;
+    font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__button{
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  }
+  .logo{
+    width: 36px;
+    height: 35px;
+    background: url('img/logomini.svg')
+  }
 }
