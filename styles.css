@@ -80,33 +80,166 @@ header{
 .main__button:hover{
   opacity: .5;
 }
-@media (max-width: 768px) {
+@media (min-width: 1024px){
+  .hamburger-menu{
+    display: none;
+  }
+}
+@media (max-width: 1919px) {
+  .wrapper{
+    width: 68%;
+  }
+  header{
+    margin-bottom: 81px;
+  }
+  .menu__item{
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__title{
+    margin: 0 0 40px 0;
+    font: 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+    width: 434px;
+  }
+  .main__text{
+    margin: 0 0 41px 0;
+    font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+    max-width: 367px;
+  }
+  .main{
+    padding: 15px 60% 200px 0;
+    background-size: 55%;
+  }
+  .main__button{
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    padding: 14px 21px;
+  }
+@media (max-width: 1365px) {
+  .wrapper{
+    width: 91%;
+  }
+  header{
+    margin-bottom: 81px;
+  }
+  .menu__item{
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__title{
+    margin: 0 0 40px 0;
+    font: 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+    width: 434px;
+  }
+  .main__text{
+    margin: 0 0 41px 0;
+    font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+    max-width: 367px;
+  }
+  .main{
+    padding: 13px 60% 200px 0;
+    background-size: 55%;
+  }
+  .main__button{
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    padding: 14px 21px;
+  }
+}
+@media (max-width: 1023px) {
   .menu{
     display: none;
   }
   header{
-    margin-bottom: 28px;
-  }
-  .main{
-    text-align: center;
-    padding: 74% 0 0;
-    background-size: 74%;
-    background-position: top center;
-  }
-  .main__title{
-    margin-bottom: 44px;
-    font: 30px/39px pt_serifbold, arial, helvetica, sans-serif;
-  }
-  .main__text{
-    margin-bottom: 25px;
-    font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
-  }
-  .main__button{
-    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    margin-bottom: 7px;
   }
   .logo{
+    position: absolute;
+    top: 24px;
+    left: 24px;
     width: 36px;
     height: 35px;
     background: url('img/logomini.svg')
+  }
+  #menu__toggle {
+    display: none;
+  }
+ .menu__btn {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 32px;
+   left: 87%;
+   width: 25px;
+   height: 17px;
+   z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0056EC;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -7px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 7px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 42% 0 0;
+    list-style: none;
+    text-align: center;
+  }
+  .menu__box_item {
+    display: block;
+    padding: 12px 0;
+    color: #000;
+    font: 500 30px/35px Roboto arial, helvetica, sans-serif;
+    text-decoration: none;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+    background-color: white;
+  }
+  .main{
+    text-align: center;
+    padding: 87% 0 0;
+    background-size: 94%;
+    background-position: top center;
+  }
+  .main__title{
+    margin: 0 auto 33px auto;
+    font: 30px/39px pt_serifbold, arial, helvetica, sans-serif;
+    max-width: 80%;
+  }
+  .main__text{
+    margin: 0 auto 25px auto;
+    font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+    max-width: 80%;
+  }
+  .main__button{
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    padding: 14px 21px;
   }
 }
