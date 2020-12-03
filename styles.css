@@ -67,15 +67,30 @@ header{
   font: 500 22px/26px Roboto, arial, helvetica, sans-serif;
   max-width: 455px;
 }
+@keyframes flash {
+  0% {
+    background-color: #0056EC;
+  }
+  50% {
+    background-color: #00AD9F;
+  }
+  100% {
+    background-color: #0056EC;
+  }
+}
 .main__button{
   display: inline-block;
   font: 18px/21px Roboto arial, helvetica, sans-serif;
   color: #fff;
-  background: #0056EC;
+  background-color: #0056EC;
   padding: 18px 30px;
   text-decoration: none;
   border-radius: 4px;
   transition: .5s;
+  animation-name: flash;
+  animation-iteration-count: 3;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 .main__button:hover{
   opacity: .5;
